@@ -56,8 +56,6 @@ console.log(lista2);
 let subtotal = lista1["precionormal"] + lista2["precionormal"];
 let igv = subtotal * 0.18;
 let total = subtotal + igv;
-let iva = total * 0.1;
-let total2 = total + iva;
 
 let factura1 = new factura(
   "B001",
@@ -70,8 +68,8 @@ let factura1 = new factura(
   "Santa rosa",
   999666231,
   [lista1, lista2],
+  subtotal,
   total,
-  total2,
   "Efectivo"
 );
 console.log(factura1);
