@@ -33,11 +33,27 @@ let Languages = [
   },
 ];
 
-const search_languages = (languages) => {
-  let x = Languages.filter((variable) =>
-    Object.values(variable).includes(languages)
+const search_languages = (word, lang, Languages) => {
+  let language;
+  let traductor;
+  for (let key in Languages) {
+    if (word === Languages[key].text) {
+      language = Languages[key].language;
+      console.log(language);
+    }
+    if (lang === Languages[key].language) {
+      traductor = Languages[key].text;
+      console.log(traductor);
+    }
+  }
+
+  console.log(
+    `Identificador Idioma: ${language} - Palabra traducida al ${lang}: ${traductor}`
   );
-  return x[0].language;
 };
 
-console.log(search_languages("Bem-vindo ao curso React Native na PachaQtec"));
+search_languages(
+  "Bienvenido al curso de React Native en PachaQtec",
+  "Italiano",
+  Languages
+);

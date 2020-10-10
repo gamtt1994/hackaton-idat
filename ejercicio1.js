@@ -12,66 +12,79 @@ correspondiente. Por último, añadir otro método que muestre por pantalla
 el importe total de la factura
 */
 
-function factura(
-  serie,
-  correlativo,
-  nombreempresa,
-  direccion,
-  telefono,
-  nif,
-  nombrecliente,
-  direccioncliente,
-  telefonocliente,
-  detalle,
-  importetotal,
-  iva,
-  formadepago
-) {
-  this.serie = serie;
-  this.correlativo = correlativo;
-  this.nombreempresa = nombreempresa;
-  this.direccion = direccion;
-  this.telefono = telefono;
-  this.nif = nif;
-  this.nombrecliente = nombrecliente;
-  this.direccioncliente = direccioncliente;
-  this.telefonocliente = telefonocliente;
-  this.detalle = detalle;
-  this.importetotal = importetotal;
-  this.iva = iva;
-  this.formadepago = formadepago;
+function Company(name, address, phone) {
+  this.name = name;
+  this.address = address;
+  this.phone = phone;
 }
+let company1 = new Company("Tisi Sac", "Av. separadora industrial", "1234567");
 
-function lista(descripcion, precionormal, cantidad) {
-  this.descripcion = descripcion;
-  this.precionormal = precionormal;
-  this.cantidad = cantidad;
+function Client(name, address, phone, dni) {
+  this.name = name;
+  this.address = address;
+  this.phone = phone;
+  this.dni = dni;
 }
-
-let lista1 = new lista("Manzana", 12, 20);
-let lista2 = new lista("Pera", 12, 15);
-console.log(lista1);
-console.log(lista2);
-
-let subtotal = lista1["precionormal"] + lista2["precionormal"];
-let igv = subtotal * 0.18;
-let total = subtotal + igv;
-
-let factura1 = new factura(
-  "B001",
-  "000001",
-  "El Bodeguero",
-  "San juaquin",
-  947230083,
-  12345,
+let client1 = new Client(
   "Gustavo Maldonado",
-  "Santa rosa",
-  999666231,
-  [lista1, lista2],
-  subtotal,
-  total,
-  "Efectivo"
+  "Av. san juaquin 841",
+  "947230083",
+  "70693876"
 );
-console.log(factura1);
 
-//corregir
+function Product(desc, price, unit) {
+  this.desc = desc;
+  this.price = price;
+  this.unit = unit;
+}
+
+let product1 = new Product("coca cola", 2.5, 2);
+let product2 = new Product("pepsi cola", 2, 2);
+let product3 = new Product("inca cola", 2.5, 2);
+let product4 = new Product("concordia", 1.5, 2);
+
+let list = [];
+list.push(product1);
+list.push(product2);
+list.push(product3);
+list.push(product4);
+
+const GetSubtotal = (list) => {
+  let price = 0;
+  for (let key in list) {
+    price += list[key].price * list[key].unit;
+  }
+  return price;
+};
+
+const GetTax = (subTotal) => {
+  const igv = 18;
+  let tax = 0;
+  tax = (subTotal * igv) / 100;
+  return tax;
+};
+
+const GetTotal = (subTotal, tax) => {
+  let total = 0;
+  total = subTotal + tax;
+  return total;
+};
+
+const ShowTotal = (total) => {
+  return `Total: ${total}`;
+};
+
+function Factura(serie, correlative, company, client, detail) {
+  this.serie = serie;
+  this.correlative = correlative;
+  this.company = company;
+  this.client = client;
+  this.detail = detail;
+  this.subTotal = GetSubtotal(this.detail);
+  this.tax = GetTax(this.subTotal);
+  this.total = GetTotal(this.subTotal, this.tax);
+  this.showTotal = ShowTotal(this.total);
+}
+
+let sendfactura = new Factura("B001", "00001", company1, client1, list);
+console.log(sendfactura);
