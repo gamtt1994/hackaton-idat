@@ -5,34 +5,39 @@
 manera sencilla.
 */
 
-let idiomas = [
+let Languages = [
   {
-    idioma: "Español",
-    texto: "Bienvenido al curso de React Native en PachaQtec",
-    id_idioma: 1,
+    language: "Español",
+    text: "Bienvenido al curso de React Native en PachaQtec",
+    id_language: 1,
   },
   {
-    idioma: "Ingles",
-    texto: "Welcome to the React Native course at PachaQtec",
-    id_idioma: 2,
+    language: "Ingles",
+    text: "Welcome to the React Native course at PachaQtec",
+    id_language: 2,
   },
   {
-    idioma: "Francés",
-    texto: "Bienvenue dans le cours React Native chez PachaQtec",
-    id_idioma: 3,
+    languageanguage: "Francés",
+    text: "Bienvenue dans le cours React Native chez PachaQtec",
+    id_language: 3,
   },
   {
-    idioma: "Italiano",
-    texto: "Benvenuti al corso React Native presso PachaQtec",
-    id_idioma: 4,
+    language: "Italiano",
+    text: "Benvenuti al corso React Native presso PachaQtec",
+    id_language: 4,
   },
   {
-    idioma: "Portugués",
-    texto: "Bem-vindo ao curso React Native na PachaQtec",
-    id_idioma: 5,
+    language: "Portugués",
+    text: "Bem-vindo ao curso React Native na PachaQtec",
+    id_language: 5,
   },
 ];
 
-let texto = "Bem-vindo ao curso React Native na PachaQtec";
-let x = idiomas.filter((variable) => Object.values(variable).includes(texto));
-console.log(x[0].idioma);
+const search_languages = (languages) => {
+  let x = Languages.filter((variable) =>
+    Object.values(variable).includes(languages)
+  );
+  return x[0].language;
+};
+
+console.log(search_languages("Bem-vindo ao curso React Native na PachaQtec"));

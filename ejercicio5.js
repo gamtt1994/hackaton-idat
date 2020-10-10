@@ -5,18 +5,18 @@ círculo al que le pasamos el radio cuando lo inicialicemos, y que tenga una
 función que nos calcule su área, otra su longitud, y estos valores sean
 mostrados por pantalla
 */
-let radio = prompt("introdusca su nombre");
+let radio = prompt("Ingresar el valor del radio");
 
-const area = (a) => {
-  let xarea = Math.PI * a ** 2;
+const area = (valorradio) => {
+  let xarea = Math.PI * valorradio ** 2;
   return xarea.toFixed(2);
 };
 
 console.log("El área del circulo es :" + area(radio));
 alert("El área del circulo es :" + area(radio));
 
-const longitud = (a) => {
-  let xlongitud = 2 * Math.PI * a;
+const longitud = (valorradio) => {
+  let xlongitud = 2 * Math.PI * valorradio;
   return xlongitud.toFixed(2);
 };
 

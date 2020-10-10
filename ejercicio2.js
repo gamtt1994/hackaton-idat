@@ -11,7 +11,7 @@ for (i = 0; i < 10; i++) {
 }
 console.log(data);
 
-let nombres = ["Gustavo", "Alejandro"];
-nombres.push("Miguel");
+let names = ["Gustavo", "Alejandro"];
+names.push("Miguel");
 
-console.log(nombres);
+console.log(names);

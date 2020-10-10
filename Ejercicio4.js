@@ -5,7 +5,7 @@ meses del año
 - Mostrar por pantalla los doce nombres utilizando la función *alert()*
 */
 
-let meses = [
+let months = [
   "Enero",
   "Febrero",
   "Marzo",
@@ -20,4 +20,4 @@ let meses = [
   "Diciembre",
 ];
 
-alert("Los meses del año son: " + meses);
+alert("Los meses del año son: " + months);

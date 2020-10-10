@@ -9,10 +9,6 @@ usuario al ingresar el número de teléfono, el programa reconozca a quién
 pertenece el mismo
 */
 
-let celular = [
-  { nombre: "Gustavo", telefono: 947230083 },
-  { nombre: "Alejandro", telefono: 947230080 },
-];
 /*
 let busqueda0 = celular.filter(function (cell) {
   if (cell.telefono == 947230083) {
@@ -23,12 +19,17 @@ let busqueda0 = celular.filter(function (cell) {
 console.log(busqueda0);
 */
 
-let data = [
-  { name: "Gustavo", telefono: 947230081 },
-  { name: "Alenadro", telefono: 947230082 },
-  { name: "Miguel", telefono: 947230083 },
+let contact = [
+  { name: "Gustavo", telephone: 947230081 },
+  { name: "Alenadro", telephone: 947230082 },
+  { name: "Miguel", telephone: 947230083 },
 ];
 
-let texto = 947230081;
-let x = data.filter((variable) => Object.values(variable).includes(texto));
-console.log(x[0].name);
+const search_number = (number_telephone) => {
+  let x = contact.filter((variable) =>
+    Object.values(variable).includes(number_telephone)
+  );
+  return x[0].name;
+};
+
+console.log(search_number(947230081));

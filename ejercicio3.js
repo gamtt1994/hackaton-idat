@@ -8,9 +8,9 @@ valor_futuro =valor*Math.pow (1+tasa/100,periodo)
 
 
 */
-let valor = 2000;
-let tasa = 2.5;
-let periodo = 6;
-let valor_futuro = valor * Math.pow(1 + tasa / 100, periodo);
+let value = 2000;
+let interest_cup = 2.5;
+let period = 6;
+let value_future = value * Math.pow(1 + interest_cup / 100, period);
 
-console.log("Valor futuro de la inversión es: ", valor_futuro.toFixed(2));
+console.log("Valor futuro de la inversión es: ", value_future);

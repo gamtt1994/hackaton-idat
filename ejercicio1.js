@@ -73,3 +73,5 @@ let factura1 = new factura(
   "Efectivo"
 );
 console.log(factura1);
+
+//corregir
