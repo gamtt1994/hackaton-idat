@@ -10,11 +10,7 @@ const phrases = (phrase) => {
 //La letra g realiza una busqueda global.
 //Sigue buscando coincidencias en lugar de pararse al encontrar una.
 
-//la letra w asigna la mayuscula a la primera letra
+//la letra w busca la coincidencias de l
 
 //La letra b busca la posición de una palabra limitada por espacios, puntuación o inicio/final.
 phrases("hola como estas");
-
-let hola = "hola 1 como estas";
-hola.replace(/\w1/);
-console.log(hola);
