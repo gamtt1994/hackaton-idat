@@ -6,46 +6,26 @@ const checkPhrase = (phare) => {
   var text = phare.toLowerCase().split("");
   for (k = 0; k < text.length; k++) {
     switch (text[k]) {
-      case "a":
-      case "à":
-      case "á":
+      case "a" || "A":
         a++;
         break;
-      case "e":
-      case "é":
-      case "è":
+      case "e" || "e":
         e++;
         break;
-      case "i":
-      case "í":
-      case "ì":
+      case "i" || "I":
         i++;
         break;
-      case "o":
-      case "ó":
-      case "ò":
+      case "o" || "O":
         o++;
         break;
-      case "u":
-      case "ú":
-      case "ù":
+      case "u" || "U":
         u++;
         break;
-      case " ":
-        blancos++;
     }
   }
-
-  totalVocales = a + e + i + o + u;
-
-  console.log("Hay " + a + " vocales 'a'");
-  console.log("Hay " + e + " vocales 'e'");
-  console.log("Hay " + i + " vocales 'i'");
-  console.log("Hay " + o + " vocales 'o'");
-  console.log("Hay " + u + " vocales 'u'");
-  console.log("Hay " + blancos + " blancos");
-  console.log(`Total de vocal es : ${totalVocales}`);
+  total = a + e + i + o + u;
+  console.log(total);
 };
 
-var a = (e = i = o = u = blancos = 0);
-vectorLetras = checkPhrase("hola como estas");
+var a = (e = i = o = u = 0);
+vectorLetras = checkPhrase("hola A como estas");

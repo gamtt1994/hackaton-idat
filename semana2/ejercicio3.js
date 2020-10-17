@@ -5,11 +5,11 @@ como parámetro y encuentre la palabra más corta dentro de la cadena
 
 const shortWord = (phrase) => {
   var str = phrase.split(" ");
-  var longest = str.length;
+  var shortest = str.length;
   var word = null;
   str.forEach(function (str) {
-    if (longest > str.length) {
-      longest = str.length;
+    if (shortest > str.length) {
+      shortest = str.length;
       word = str;
     }
   });
