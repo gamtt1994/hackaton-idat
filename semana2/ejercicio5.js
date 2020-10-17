@@ -11,7 +11,8 @@ o console.log (miles_separador (100000));
 */
 
 const numberWithCommas = (number) => {
-  console.log(number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","));
+  let valueNumber = number.toFixed(2);
+  console.log(valueNumber.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","));
 };
 
 numberWithCommas(100000.235);
