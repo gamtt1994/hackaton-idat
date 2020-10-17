@@ -21,10 +21,12 @@ const checkPhrase = (phare) => {
       case "u" || "U":
         u++;
         break;
+      default:
+        blancos++;
     }
   }
   total = a + e + i + o + u;
-  console.log(total);
+  console.log(`total:` + total);
 };
 
 var a = (e = i = o = u = 0);
