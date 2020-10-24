@@ -4,10 +4,14 @@ numero enviado como parámetro a dicha función.*/
 const calculate = (arrayElement) => {
   for (const element of arrayElement) {
     let square = Math.pow(element.age, 2);
-    let cube = Math.pow(element.age, 3);
+    element["square"] = square;
     console.log(`La edad  de ${element.age} años al cuadrado es: ${square}`);
+
+    let cube = Math.pow(element.age, 3);
+    element["cube"] = cube;
     console.log(`La edad de ${element.age} años al cubo es: ${cube}`);
   }
+  console.log(arrayElement);
 };
 
 const myCallback = (num, callback) => {
