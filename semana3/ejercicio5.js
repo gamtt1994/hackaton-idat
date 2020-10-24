@@ -19,5 +19,5 @@ const mySort = (array, callback) => {
   return callback(array);
 };
 
-let countries = ["Gustavo", "Alejandro", "Roberto", "Mirko", "Virginia"];
-console.log(mySort(countries, sort));
+let names = ["Gustavo", "Alejandro", "Roberto", "Mirko", "Virginia"];
+console.log(mySort(names, sort));

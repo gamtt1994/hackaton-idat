@@ -1,15 +1,15 @@
 /*6. Crea una función usando callbacks, que reciba una condición, y dos
 funciones que se realicen en caso la condición se cumpla o no.*/
 
-const printPar = (age) =>
+const adult = (age) =>
   console.log(`La persona con edad de ${age} es mayor de edad`);
-const printImpar = (age) =>
+const boys = (age) =>
   console.log(`La persona con edad de ${age} es menor de edad`);
 
 const evaluate = (validateAge) => {
   for (const element of validateAge) {
-    if (element.age >= 18) printPar(element.age);
-    else printImpar(element.age);
+    if (element.age >= 18) adult(element.age);
+    else boys(element.age);
   }
 };
 
