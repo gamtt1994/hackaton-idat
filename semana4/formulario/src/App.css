@@ -12,42 +12,97 @@
   justify-content: center;
   width: 100%;
   flex-direction: row;
+  background-color: #cdcfe9;
+  flex-wrap: wrap;
 }
 
 .dataPersonal {
-  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  height: 550px;
+  width: 40%;
+  background-color: white;
+  flex-direction: column;
+  text-align: center;
+  box-shadow: 0px 20px 20px 1px rgba(0, 0, 0, 0.2);
+}
+.dataPersonal h1 {
+  width: 100%;
+}
+.dataPersonal label {
+  text-align: start;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
 }
 
 .formulario {
   display: flex;
-  width: 80%;
+  width: 30%;
+  height: 550px;
   flex-wrap: wrap;
-  height: 500px;
   flex-direction: column;
   align-items: center;
-  background-color: #0e86e5;
+  background-color: #163760;
   color: white;
+  border-radius: 0px 20px 20px 0px;
+  text-align: center;
+  box-shadow: 0px 20px 20px 1px rgba(0, 0, 0, 0.2);
 }
 
 .formulario h1 {
   margin-top: 20px;
   margin-bottom: 20px;
-  text-align: center;
 }
 
 .formulario input {
   width: 50%;
-  text-align: center;
-  margin-bottom: 25px;
-  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
   size: 20px;
-  background-color: #0e86e5;
+  color: white;
+  background-color: #163760;
   border: 0px;
   border-bottom: 1px solid black;
   text-align: start;
+  flex: 1;
+}
+
+.formulario span {
+  color: red;
+  margin-bottom: 5px;
+}
+
+::placeholder {
+  color: white;
 }
 
 .formulario button {
-  width: 50%;
-  text-align: center;
+  display: block;
+  width: 100%;
+  height: 50px;
+  align-content: flex-end;
+  background-color: #5762d6;
+  border: 0;
+  color: white;
+  border-radius: 0px 0px 20px 0px;
+}
+
+.card {
+  display: flex;
+  border: 1px solid red;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.card-photo {
+  border: 1px solid red;
+  width: 30%;
+  color: #5762d6;
+}
+
+.photo {
+  width: 100%;
+  height: 150px;
 }
