@@ -67,10 +67,11 @@
   border-bottom: 1px solid black;
   text-align: start;
   flex: 1;
+  outline: none;
 }
 
 .formulario span {
-  color: red;
+  color: white;
   margin-bottom: 5px;
 }
 

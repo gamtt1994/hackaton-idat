@@ -47,13 +47,14 @@ function App() {
             },
             maxLength: {
               value: 20,
-              message: "El nombre debe de tener como máximo 5 carácteres!",
+              message: "El máximo de carácteres es 20",
             },
             minLength: {
               value: 2,
-              message: "El nombre debe de tener como mínimo 2 de carácteres",
+              message: "El mínimo de carácteres es 2",
             },
           })}
+          autoComplete="none"
           name="nombre"
         />
         <span>{errors?.nombre?.message}</span>
@@ -68,14 +69,15 @@ function App() {
             },
             maxLength: {
               value: 20,
-              message: "El apellido debe de tener como máximo 5 carácteres!",
+              message: "El máximo de carácteres es 20!",
             },
             minLength: {
               value: 3,
-              message: "El apellido debe de tener como mínimo 3 carácteres",
+              message: "El mínimo de carácteres es 3",
             },
           })}
           name="apellido"
+          autoComplete="none"
         />
         <span>{errors?.apellido?.message}</span>
 
@@ -86,6 +88,7 @@ function App() {
             required: { value: true, message: "correo es requerido" },
           })}
           name="correo"
+          autoComplete="none"
         />
 
         <span>{errors?.correo?.message}</span>
@@ -100,13 +103,14 @@ function App() {
             },
             maxLength: {
               value: 12,
-              message: "El telefono debe de tener como máximo 12 carácteres!",
+              message: "El máximo carácteres es 12!",
             },
             minLength: {
               value: 6,
-              message: "El telefono debe de tener como mínimo 6 carácteres",
+              message: "El mínimo de carácteres es 6 ",
             },
           })}
+          autoComplete="none"
           name="telefono"
         />
 
@@ -121,6 +125,7 @@ function App() {
               message: "fecha de nacimiento es un campo requerido",
             },
           })}
+          autoComplete="none"
           name="FechaNacimiento"
         />
 
@@ -136,14 +141,14 @@ function App() {
             },
             maxLength: {
               value: 50,
-              message: "La dirección debe de tener como máximo 50 carácteres!",
+              message: "El máximo de carácteres es 50",
             },
             minLength: {
               value: 3,
-              message:
-                "La direccióno debe de tener como mínimo 3 de carácteres",
+              message: "El mínimo de carácteres es 3",
             },
           })}
+          autoComplete="off"
           name="direccion"
         />
 
