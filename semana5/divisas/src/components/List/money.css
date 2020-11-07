@@ -1,0 +1,107 @@
+html {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: wrap;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.Card {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: wrap;
+  height: 400px;
+  width: 100%;
+  box-shadow: 2px 2px 2px 2px rgb(156, 156, 156);
+  border-top: 5px solid rgb(28, 138, 228);
+}
+
+.Container {
+  height: 100%;
+  width: 100%;
+}
+
+.Card .Header {
+  width: 100%;
+  text-align: center;
+}
+
+.Card .Amount {
+  width: 80%;
+  margin: auto;
+}
+
+.Card .Amount h3 {
+  color: darkgrey;
+  margin: 2px;
+}
+
+.Card .Amount input {
+  height: 40px;
+  width: 98%;
+  font-size: 25px;
+  font-weight: 550;
+  margin-bottom: 10px;
+  padding-left: 2%;
+}
+
+.Card .From {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.Card .From .container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.Card .From select {
+  width: 30%;
+  height: 40px;
+  text-align-last: center;
+}
+
+.Card .From select option {
+  text-align-last: center;
+}
+
+.Card .From img {
+  width: 5%;
+  height: 20px;
+}
+
+.Card .From h3 {
+  color: darkgrey;
+  margin: 2px;
+}
+
+.Card .footerButton {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  margin-top: 5%;
+}
+
+.Card .footerButton button {
+  width: 80%;
+  height: 40px;
+  color: white;
+  font-size: 18px;
+  font-weight: 750;
+  background-color: rgb(28, 138, 228);
+  border: 0;
+}
