@@ -1,0 +1,142 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-direction: row;
+  background-color: #142d38;
+  flex-wrap: wrap;
+}
+
+.dataPersonal {
+  display: flex;
+  height: 550px;
+  width: 60%;
+  background-color: white;
+  flex-direction: column;
+  text-align: center;
+  box-shadow: 0px 20px 20px 1px rgba(0, 0, 0, 0.2);
+}
+.dataPersonal h1 {
+  width: 100%;
+}
+.dataPersonal label {
+  text-align: start;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+}
+
+.formulario {
+  display: flex;
+  width: 60%;
+  align-items: center;
+  background-color: white;
+  color: white;
+  border-radius: 0px 20px 20px 0px;
+  text-align: center;
+  box-shadow: 0px 20px 20px 1px rgba(0, 0, 0, 0.2);
+  margin: 5%;
+}
+
+.formbutton {
+  width: 50%;
+  height: 400px;
+}
+
+.formulario input {
+  width: 90%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  size: 20px;
+  color: #909597;
+  background-color: white;
+  border: 0px;
+  border-bottom: 1px solid black;
+  text-align: start;
+  flex: 1;
+  outline: none;
+  margin: 4%;
+}
+
+.formulario input:focus {
+  border-bottom: 1px solid green;
+}
+
+.formulario textarea {
+  width: 90%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  size: 20px;
+  color: #909597;
+  border: 0px;
+  border-bottom: 1px solid black;
+  color: #bbc6ca;
+  text-align: start;
+  flex: 1;
+  outline: none;
+  margin: 4%;
+}
+
+.formulario textarea:focus {
+  border-bottom: 1px solid green;
+}
+
+.formulario span {
+  padding: 15px;
+  color: red;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+::placeholder {
+  color: black;
+}
+
+.formulario button {
+  display: block;
+  width: 100%;
+  height: 100%;
+  align-content: flex-end;
+  background-color: #b0df60;
+  border: 0;
+  color: white;
+  border-radius: 0px 0px 20px 0px;
+  font-size: 20px;
+}
+
+.formulario .logobutton {
+  height: 20%;
+  width: 100%;
+}
+
+.contenedor {
+  width: 50%;
+}
+
+.card {
+  display: flex;
+  border: 1px solid red;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.card-photo {
+  border: 1px solid red;
+  width: 30%;
+  color: #5762d6;
+}
+
+.photo {
+  width: 100%;
+  height: 150px;
+}
