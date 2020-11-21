@@ -22,11 +22,14 @@ const Formulario = ({citas, setCitas, guardarMostrar}) => {
   const [correo, guardarCorreo] = useState('');
   const [fecha, guardarFecha] = useState('');
   const [genero, guardarGenero] = useState('');
-  const [isMasculino, setIsMasculino] = useState(false);
+  const [Masculino, setIsMasculino] = useState(false);
+  const [Femenino, setIsFemenino] = useState(false);
 
   const [isDatePickerVisible, setDatePickerVisibility] = useState(false);
 
   const toggleSwitch = () => setIsMasculino((previousState) => !previousState);
+  const toggleSwitchFemenino = () =>
+    setIsFemenino((previousState) => !previousState);
 
   const showDatePicker = () => {
     setDatePickerVisibility(true);
@@ -70,7 +73,15 @@ const Formulario = ({citas, setCitas, guardarMostrar}) => {
       console.log('Debe de completar todos los campos');
       return;
     }
-    const cita = {nombre, apellido, telefono, correo, fecha, genero};
+    const cita = {
+      nombre,
+      apellido,
+      telefono,
+      correo,
+      fecha,
+      Masculino,
+      Femenino,
+    };
     cita.id = shortid.generate();
     const citasNuevo = [...citas, cita];
     setCitas(citasNuevo);
@@ -154,13 +165,21 @@ const Formulario = ({citas, setCitas, guardarMostrar}) => {
         </View>
 
         <View>
-          <Text style={styles.label}>Genero:</Text>
+          <Text style={styles.label}>Masculino:</Text>
           <Switch
             trackColor={{false: '#767577', true: '#81b0ff'}}
-            thumbColor={isMasculino ? '#f5dd4b' : '#f4f3f4'}
+            thumbColor={Masculino ? '#f5dd4b' : '#f4f3f4'}
             ios_backgroundColor="#3e3e3e"
-            value={isMasculino}
+            value={Masculino}
             onValueChange={toggleSwitch}
+          />
+          <Text style={styles.label}>Femenino:</Text>
+          <Switch
+            trackColor={{false: '#767577', true: '#81b0ff'}}
+            thumbColor={Femenino ? '#f5dd4b' : '#f4f3f4'}
+            ios_backgroundColor="#3e3e3e"
+            value={Femenino}
+            onValueChange={toggleSwitchFemenino}
           />
         </View>
 

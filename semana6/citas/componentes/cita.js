@@ -36,8 +36,13 @@ const Cita = ({cita, eliminarPaciente}) => {
       </View>
 
       <View>
-        <Text style={styles.label}>Genero:</Text>
-        <Text style={styles.texto}>{cita.genero}</Text>
+        <Text style={styles.label}>Genero masculino:</Text>
+        <Text style={styles.texto}>{cita.Masculino}</Text>
+      </View>
+
+      <View>
+        <Text style={styles.label}>Genero Femenino:</Text>
+        <Text style={styles.texto}>{cita.Femenino}</Text>
       </View>
 
       <View>
