@@ -26,4 +26,33 @@ export const DataSong = [
     id: 4,
     subtitle: 'Ica - Perú',
   },
+
+  {
+    title: 'Bruja de cachiche',
+    image:
+      'https://cde.peru.com//ima/0/1/9/4/8/1948693/924x530/brujas-cachiche.jpg',
+    id: 5,
+    subtitle: 'Ica - Perú',
+  },
+  {
+    title: 'Señor de luren',
+    image:
+      'https://portal.andina.pe/EDPfotografia3/Thumbnail/2019/05/15/000586233W.jpg',
+    id: 6,
+    subtitle: 'Ica - Perú',
+  },
+  {
+    title: 'Bruja de cachiche',
+    image:
+      'https://cde.peru.com//ima/0/1/9/4/8/1948693/924x530/brujas-cachiche.jpg',
+    id: 7,
+    subtitle: 'Ica - Perú',
+  },
+  {
+    title: 'Señor de luren',
+    image:
+      'https://portal.andina.pe/EDPfotografia3/Thumbnail/2019/05/15/000586233W.jpg',
+    id: 8,
+    subtitle: 'Ica - Perú',
+  },
 ];
