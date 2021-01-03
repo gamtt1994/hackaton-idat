@@ -1,12 +1,9 @@
 import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
-import DashBoard from './src/screens/home/DashBoard';
+import Dashboard from './components/stack/StackHome';
+
 const App = () => {
-  return (
-    <>
-      <DashBoard />
-    </>
-  );
+  return <Dashboard />;
 };
 
 const styles = StyleSheet.create({
