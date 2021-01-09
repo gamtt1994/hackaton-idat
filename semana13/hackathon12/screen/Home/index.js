@@ -18,7 +18,6 @@ const Dashboard = ({navigation}) => {
           <SocialSlider data={DataSocialMedia} />
         </View>
         <View style={styles.podcasts}>
-          <Text style={styles.title}>My favorite song</Text>
           <SongSlider
             style={{
               flex: 1,
@@ -35,7 +34,7 @@ const Dashboard = ({navigation}) => {
   );
 };
 
-const styles = StyleSheet.create({
+export const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
@@ -44,6 +43,13 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 20,
+    marginTop: 10,
+    marginHorizontal: 20,
+    fontWeight: 'bold',
+    marginBottom: 20,
+  },
+  title2: {
+    fontSize: 30,
     marginTop: 10,
     marginHorizontal: 20,
     fontWeight: 'bold',

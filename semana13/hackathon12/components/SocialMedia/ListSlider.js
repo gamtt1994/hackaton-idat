@@ -11,10 +11,13 @@ import ListliderItem from './ListSliderItem';
 
 const {height, width} = Dimensions.get('window');
 
-const styles = StyleSheet.create({
+export const styles = StyleSheet.create({
   dot: {
     flexDirection: 'row',
     justifyContent: 'center',
+  },
+  container: {
+    flex: 1,
   },
 });
 
@@ -23,7 +26,7 @@ const ListSlider = ({data}) => {
   console.log('Data socialMedia', data);
   if (data && data.length) {
     return (
-      <View style={{flex: 1}}>
+      <View style={styles.container}>
         <FlatList
           data={data}
           keyExtractor={(item, index) => 'key' + index}

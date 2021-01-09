@@ -1,0 +1,256 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Redering Should match Text snapshot 1`] = `
+<Text
+  style={
+    Object {
+      "fontSize": 20,
+      "fontWeight": "bold",
+      "marginBottom": 20,
+      "marginHorizontal": 20,
+      "marginTop": 10,
+    }
+  }
+>
+  My social Networks
+</Text>
+`;
+
+exports[`Redering Should match View snapshot 1`] = `
+Array [
+  <View>
+    <View
+      style={
+        Object {
+          "height": 100,
+        }
+      }
+    >
+      <ModalPicker />
+    </View>
+    <View
+      style={
+        Object {
+          "flex": 1,
+          "marginHorizontal": 20,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "fontSize": 20,
+            "fontWeight": "bold",
+            "marginBottom": 20,
+            "marginHorizontal": 20,
+            "marginTop": 10,
+          }
+        }
+      >
+        My social Networks
+      </Text>
+      <ListSlider
+        data={
+          Array [
+            Object {
+              "id": 1,
+              "image": "https://assets.stickpng.com/images/58e91965eb97430e819064f5.png",
+              "subtitle": "@facebook",
+              "title": "Facebok",
+            },
+            Object {
+              "id": 2,
+              "image": "https://cdn.clipart.email/88927c181903aa4cd580e5337a0183dd_twitter-logo-icon-social-media-icon-png-and-vector-twitter-_840-859.png",
+              "subtitle": "@Twitter",
+              "title": "Twitter",
+            },
+            Object {
+              "id": 3,
+              "image": "https://cdn.icon-icons.com/icons2/1121/PNG/512/1486147197-social-media-circled-network04_79460.png",
+              "subtitle": "@Youtube",
+              "title": "Youtube",
+            },
+            Object {
+              "id": 4,
+              "image": "https://geoapps.esri.co/avistamientos/mapita/Ima/inta.png",
+              "subtitle": "@Instagram",
+              "title": "Instagram",
+            },
+          ]
+        }
+      />
+    </View>
+    <View
+      style={
+        Object {
+          "flex": 3,
+          "marginHorizontal": 20,
+        }
+      }
+    >
+      <ListSlider
+        data={
+          Array [
+            Object {
+              "id": 1,
+              "image": "https://pbs.twimg.com/media/EV071nIWoAE_bZX.jpg",
+              "subtitle": "Libido",
+              "title": "En esta habitación",
+            },
+            Object {
+              "id": 2,
+              "image": "https://portal.andina.pe/EDPfotografia2/Thumbnail/2009/08/07/000102504W.jpg",
+              "subtitle": "Libido",
+              "title": "Ojos de angel",
+            },
+            Object {
+              "id": 3,
+              "image": "https://pbs.twimg.com/media/EV071nIWoAE_bZX.jpg",
+              "subtitle": "Libido",
+              "title": "En tu rostro",
+            },
+            Object {
+              "id": 4,
+              "image": "https://portal.andina.pe/EDPfotografia2/Thumbnail/2009/08/07/000102504W.jpg",
+              "subtitle": "Libido",
+              "title": "Universo",
+            },
+          ]
+        }
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+            "marginHorizontal": 10,
+          }
+        }
+      />
+    </View>
+  </View>,
+  <View
+    style={
+      Object {
+        "height": 100,
+      }
+    }
+  >
+    <ModalPicker />
+  </View>,
+  <View
+    style={
+      Object {
+        "flex": 1,
+        "marginHorizontal": 20,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "fontSize": 20,
+          "fontWeight": "bold",
+          "marginBottom": 20,
+          "marginHorizontal": 20,
+          "marginTop": 10,
+        }
+      }
+    >
+      My social Networks
+    </Text>
+    <ListSlider
+      data={
+        Array [
+          Object {
+            "id": 1,
+            "image": "https://assets.stickpng.com/images/58e91965eb97430e819064f5.png",
+            "subtitle": "@facebook",
+            "title": "Facebok",
+          },
+          Object {
+            "id": 2,
+            "image": "https://cdn.clipart.email/88927c181903aa4cd580e5337a0183dd_twitter-logo-icon-social-media-icon-png-and-vector-twitter-_840-859.png",
+            "subtitle": "@Twitter",
+            "title": "Twitter",
+          },
+          Object {
+            "id": 3,
+            "image": "https://cdn.icon-icons.com/icons2/1121/PNG/512/1486147197-social-media-circled-network04_79460.png",
+            "subtitle": "@Youtube",
+            "title": "Youtube",
+          },
+          Object {
+            "id": 4,
+            "image": "https://geoapps.esri.co/avistamientos/mapita/Ima/inta.png",
+            "subtitle": "@Instagram",
+            "title": "Instagram",
+          },
+        ]
+      }
+    />
+  </View>,
+  <View
+    style={
+      Object {
+        "flex": 3,
+        "marginHorizontal": 20,
+      }
+    }
+  >
+    <ListSlider
+      data={
+        Array [
+          Object {
+            "id": 1,
+            "image": "https://pbs.twimg.com/media/EV071nIWoAE_bZX.jpg",
+            "subtitle": "Libido",
+            "title": "En esta habitación",
+          },
+          Object {
+            "id": 2,
+            "image": "https://portal.andina.pe/EDPfotografia2/Thumbnail/2009/08/07/000102504W.jpg",
+            "subtitle": "Libido",
+            "title": "Ojos de angel",
+          },
+          Object {
+            "id": 3,
+            "image": "https://pbs.twimg.com/media/EV071nIWoAE_bZX.jpg",
+            "subtitle": "Libido",
+            "title": "En tu rostro",
+          },
+          Object {
+            "id": 4,
+            "image": "https://portal.andina.pe/EDPfotografia2/Thumbnail/2009/08/07/000102504W.jpg",
+            "subtitle": "Libido",
+            "title": "Universo",
+          },
+        ]
+      }
+      style={
+        Object {
+          "alignItems": "center",
+          "flex": 1,
+          "justifyContent": "center",
+          "marginHorizontal": 10,
+        }
+      }
+    />
+  </View>,
+]
+`;
+
+exports[`Redering Should match snapsho 1`] = `
+<Text
+  style={
+    Object {
+      "fontSize": 20,
+      "fontWeight": "bold",
+      "marginBottom": 20,
+      "marginHorizontal": 20,
+      "marginTop": 10,
+    }
+  }
+>
+  My social Networks
+</Text>
+`;
